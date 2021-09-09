@@ -1,0 +1,25 @@
+# The name of this app. Must be unique within a project.
+name: app
+type: 'nodejs:14'
+build:
+  flavor: none
+dependencies:
+  nodejs:
+    yarn: "*"
+hooks:
+  build: |
+    set -e
+    bash create-env-file.sh
+    mkdir dist
+    yarn
+    yarn build
+web:
+  commands:
+    start: yarn start
+  locations:
+    '/':
+      passthru: true
+      request_buffering:
+        enabled: false
+    '/ws':
+      passthru: true
