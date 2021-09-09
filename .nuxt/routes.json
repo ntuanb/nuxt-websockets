@@ -3,6 +3,7 @@
     "name": "index",
     "path": "/",
     "component": "/Users/nguyentuanbui/Projects/personal/nuxt-ws/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_2e2c7d22"
   }
 ]

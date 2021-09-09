@@ -22,3 +22,7 @@ web:
         enabled: false
     '/ws':
       passthru: true
+firewall:
+  outbound:
+    - protocol: tcp
+      ports: [80, 443, 3001]
