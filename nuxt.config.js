@@ -192,7 +192,7 @@ export default {
 
       name: 'main',
 
-      url: ''
+      url: 'https://www.test-t6dnbai-n2eqhwdfk2pae.au.platformsh.site/ws'
 
     }]
 
