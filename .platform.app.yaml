@@ -13,6 +13,9 @@ hooks:
     yarn
     yarn build
 web:
+  upstream:
+    socket_family: tcp
+    protocol: http
   commands:
     start: yarn start
   locations:
@@ -22,7 +25,3 @@ web:
         enabled: false
     '/ws':
       passthru: true
-firewall:
-  outbound:
-    - protocol: tcp
-      ports: [80, 443, 3001]
