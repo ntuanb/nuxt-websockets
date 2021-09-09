@@ -9,7 +9,6 @@ dependencies:
 hooks:
   build: |
     set -e
-    bash create-env-file.sh
     mkdir dist
     yarn
     yarn build
