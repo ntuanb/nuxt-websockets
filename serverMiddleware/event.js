@@ -13,13 +13,10 @@ app.use(bodyParser.json())
  
 
 const io = require("socket.io")(3001, {
-
   cors: {
-
     origin: '*',
-
-  }
-
+  },
+  transports: ['websocket']
 });
 
  io.on('connect', () => {
