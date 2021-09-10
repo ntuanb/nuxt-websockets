@@ -8,11 +8,6 @@ export default {
 
   },
 
-  server: {
-    port: 8888
-  },
-
-
 
   target: 'server',
 
@@ -194,7 +189,7 @@ export default {
 
       name: 'main',
 
-      url: 'https://test-t6dnbai-n2eqhwdfk2pae.au.platformsh.site/ws'
+      url: 'https://www.test-t6dnbai-rmibawpogbfjw.au.platformsh.site/'
 
     }]
 
