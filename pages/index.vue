@@ -14,18 +14,18 @@ export default {
   },
   mounted() {
     this.socket = this.$nuxtSocket({
-      name: 'main'
+      name: 'main',
+      persist: true
     })
     this.socket.on("tick", (tickId) => {
       this.tick = tickId
     });
-    this.socket.on("test", (message) => {
-      console.log(message)
+    this.socket.on("test", (msg) => {
+      console.log(msg)
     });
   },
   methods: {
     click() {
-      console.log('click')
       this.socket.emit('test', 'from frontend')
     }
   }
