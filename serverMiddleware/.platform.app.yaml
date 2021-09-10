@@ -10,11 +10,10 @@ hooks:
   build: |
     yarn install
 web:
-  upstream:
-    socket_family: tcp
-    protocol: http
   commands:
     start: node io.js
   locations:
     '/':
       passthru: true
+      request_buffering:
+        enabled: false
