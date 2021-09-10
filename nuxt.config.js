@@ -147,22 +147,6 @@ export default {
 
   },
 
-
-
-  serverMiddleware: [
-
-    {
-
-      path: '/api/event',
-
-      handler: './serverMiddleware/event'
-
-    }
-
-  ],
-
-
-
   env: {
 
   },
