@@ -23,5 +23,3 @@ web:
       passthru: true
       request_buffering:
         enabled: false
-    '/ws':
-      passthru: true
