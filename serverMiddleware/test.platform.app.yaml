@@ -1,4 +1,5 @@
 # The name of this app. Must be unique within a project.
+# Requires multi project plan
 name: socket
 type: 'nodejs:14'
 build:
