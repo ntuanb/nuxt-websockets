@@ -13,7 +13,7 @@ export default {
     this.socket.on("tick", (tickId) => {
       this.tick = tickId
     });
-    this.socket.on("message", (message) => {
+    this.socket.on("test", (message) => {
       console.log(message)
     });
   }
