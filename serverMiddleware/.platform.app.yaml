@@ -6,18 +6,12 @@ build:
 dependencies:
   nodejs:
     yarn: "*"
-hooks:
-  build: |
-    set -e
-    mkdir dist
-    yarn
-    yarn build
 web:
   upstream:
     socket_family: unix
     protocol: http
   commands:
-    start: yarn start
+    start: node socket.js
   locations:
     '/':
       passthru: true
