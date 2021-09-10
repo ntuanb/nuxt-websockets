@@ -12,6 +12,6 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "start": "nuxt start",
-    "test-commit": "git add .; git commit -m 'Test'; git push;"
+    "commit": "git add .; git commit -m 'Test'; git push;"
   }
 }
