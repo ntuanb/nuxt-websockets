@@ -35,8 +35,8 @@ io.on('message', (msg) => {
   console.log(msg);
 });
 
-server.listen(3001, () => {
-  console.log('listening on *:3001');
+server.listen(8888, () => {
+  console.log('listening on *:8888');
 });
 
 module.exports = {
