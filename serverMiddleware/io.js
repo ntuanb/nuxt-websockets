@@ -10,12 +10,21 @@ const io = new Server(server, {
   },
 });
 
+var i = 0;
+// Broadcast "tick" event every second
+// Or do whatever you want with io ;)
+setInterval(() => {
+  i++;
+  console.log(i)
+  io.emit("tick", i);
+}, 1000);
+
 app.get('/', (req, res) => {
   res.json('success')
 });
 
 app.get('/test', (req, res) => {
-  res.json('success')
+  res.json('test')
 });
 
 io.on('connection', (socket) => {
@@ -26,8 +35,8 @@ io.on('message', (msg) => {
   console.log(msg);
 });
 
-server.listen(3000, () => {
-  console.log('listening on *:3000');
+server.listen(3001, () => {
+  console.log('listening on *:3001');
 });
 
 module.exports = {

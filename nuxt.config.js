@@ -190,7 +190,7 @@ export default {
 
       name: 'main',
 
-      url: 'https://www.test-t6dnbai-n2eqhwdfk2pae.au.platformsh.site/ws'
+      url: 'https://test-t6dnbai-n2eqhwdfk2pae.au.platformsh.site/ws'
 
     }]
 
