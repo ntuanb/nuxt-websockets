@@ -8,6 +8,6 @@
 
 "https://{default}/ws":
   type: upstream
-  upstream: "app:http"
+  upstream: "socket:http"
   cache:
     enabled: false
