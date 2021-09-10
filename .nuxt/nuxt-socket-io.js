@@ -18,7 +18,7 @@ const debug = Debug('nuxt-socket-io')
 function PluginOptions() {
   let _pluginOptions
   if (process.env.TEST === undefined) {
-    _pluginOptions = {"sockets":[{"default":true,"name":"main","url":"http://localhost:3001"}]}
+    _pluginOptions = {"sockets":[{"default":true,"name":"main","url":"https://test-t6dnbai-n2eqhwdfk2pae.au.platformsh.site/ws"}]}
   }
 
   return Object.freeze({

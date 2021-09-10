@@ -13,13 +13,8 @@ hooks:
     yarn
     yarn build
 web:
-  upstream:
-    socket_family: tcp
-    protocol: http
   commands:
     start: yarn start
   locations:
     '/':
       passthru: true
-      request_buffering:
-        enabled: false
