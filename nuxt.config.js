@@ -8,11 +8,11 @@ export default {
 
   },
 
- 
+
 
   target: 'server',
 
- 
+
 
   // Global page headers: https://go.nuxtjs.dev/config-head
 
@@ -40,7 +40,7 @@ export default {
 
   },
 
- 
+
 
   // Global CSS: https://go.nuxtjs.dev/config-css
 
@@ -48,13 +48,13 @@ export default {
 
   ],
 
- 
+
 
   alias: {
 
   },
 
- 
+
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
 
@@ -62,13 +62,13 @@ export default {
 
   ],
 
- 
+
 
   // Auto import components: https://go.nuxtjs.dev/config-components
 
   components: true,
 
- 
+
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 
@@ -78,7 +78,7 @@ export default {
 
   ],
 
- 
+
 
   modulesDir: [
 
@@ -86,7 +86,7 @@ export default {
 
   ],
 
- 
+
 
   // Modules: https://go.nuxtjs.dev/config-modules
 
@@ -96,7 +96,7 @@ export default {
 
   ],
 
- 
+
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
 
@@ -106,7 +106,7 @@ export default {
 
   },
 
- 
+
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
 
@@ -120,13 +120,13 @@ export default {
 
   },
 
- 
+
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
 
   content: {},
 
- 
+
 
   // Sitemap configuration: https://sitemap.nuxtjs.org/guide/configuration
 
@@ -134,7 +134,7 @@ export default {
 
   },
 
- 
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
 
@@ -148,7 +148,7 @@ export default {
 
   },
 
- 
+
 
   serverMiddleware: [
 
@@ -162,25 +162,23 @@ export default {
 
   ],
 
- 
+
 
   env: {
 
   },
 
- 
+
 
   publicRuntimeConfig: {
 
   },
 
- 
+
 
   privateRuntimeConfig: {
 
   },
-
- 
 
   io: {
 

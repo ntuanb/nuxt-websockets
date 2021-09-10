@@ -1,0 +1,23 @@
+# The name of this app. Must be unique within a project.
+name: app
+type: 'nodejs:14'
+build:
+  flavor: none
+dependencies:
+  nodejs:
+    yarn: "*"
+hooks:
+  build: |
+    set -e
+    mkdir dist
+    yarn
+    yarn build
+web:
+  upstream:
+    socket_family: unix
+    protocol: http
+  commands:
+    start: yarn start
+  locations:
+    '/ws':
+      passthru: true
