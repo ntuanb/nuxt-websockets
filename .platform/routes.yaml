@@ -6,8 +6,8 @@
   type: redirect
   to: "https://www.{default}/"
 
-"https://{default}/ws":
-  type: upstream
-  upstream: "socket:http"
-  cache:
-    enabled: false
+# "https://{default}/ws":
+#   type: upstream
+#   upstream: "socket:http"
+#   cache:
+#     enabled: false
