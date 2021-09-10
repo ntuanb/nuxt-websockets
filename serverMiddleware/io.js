@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
   res.json('success')
 });
 
+app.get('/test', (req, res) => {
+  res.json('success')
+});
+
 io.on('connection', (socket) => {
   console.log('a user connected');
 });
@@ -22,8 +26,8 @@ io.on('message', (msg) => {
   console.log(msg);
 });
 
-server.listen(80, () => {
-  console.log('listening on *:80');
+server.listen(8888, () => {
+  console.log('listening on *:8888');
 });
 
 module.exports = {
