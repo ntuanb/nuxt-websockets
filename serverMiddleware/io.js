@@ -4,6 +4,8 @@ const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 
+const config = require('platformsh-config').config();
+
 const io = new Server(server, {
   cors: {
     origin: '*',
@@ -35,8 +37,8 @@ io.on('message', (msg) => {
   console.log(msg);
 });
 
-server.listen(8888, () => {
-  console.log('listening on *:8888');
+server.listen(config.port, () => {
+  console.log(`listening on *:${config.port}`);
 });
 
 module.exports = {
