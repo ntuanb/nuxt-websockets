@@ -1,4 +1,4 @@
-import socket from './socket'
+import { io } from './io'
 
 app.all('/', async (req, res) => {
 

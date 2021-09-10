@@ -14,7 +14,7 @@ web:
     socket_family: tcp
     protocol: http
   commands:
-    start: node socket.js
+    start: node io.js
   locations:
     '/':
       passthru: true
