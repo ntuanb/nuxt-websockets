@@ -26,4 +26,6 @@ server.listen(8888, () => {
   console.log('listening on *:8888');
 });
 
-export default io
+module.exports = {
+  io
+}
