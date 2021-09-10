@@ -8,7 +8,7 @@ dependencies:
     yarn: "*"
 web:
   upstream:
-    socket_family: unix
+    socket_family: tcp
     protocol: http
   commands:
     start: node socket.js
