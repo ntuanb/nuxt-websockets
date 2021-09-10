@@ -1,6 +1,6 @@
 <template>
   <div>
-Test
+    {{ tick }}
   </div>
 </template>
 
@@ -11,7 +11,10 @@ export default {
       name: 'main'
     })
     this.socket.on("tick", (tickId) => {
-      console.log(tickId)
+      this.tick = tickId
+    });
+    this.socket.on("message", (message) => {
+      console.log(message)
     });
   }
 }

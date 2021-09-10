@@ -1,6 +1,6 @@
 const io = require("socket.io-client");
 
-const socket = io("http://localhost");
+const socket = io('https://www.test-t6dnbai-rmibawpogbfjw.au.platformsh.site/');
 
 const bodyParser = require('body-parser')
 
