@@ -6,6 +6,9 @@ build:
 dependencies:
   nodejs:
     yarn: "*"
+hooks:
+  build: |
+    yarn install
 web:
   upstream:
     socket_family: tcp
