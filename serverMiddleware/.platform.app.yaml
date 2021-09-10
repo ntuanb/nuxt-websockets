@@ -1,5 +1,5 @@
 # The name of this app. Must be unique within a project.
-name: app
+name: socket
 type: 'nodejs:14'
 build:
   flavor: none
@@ -19,5 +19,5 @@ web:
   commands:
     start: yarn start
   locations:
-    '/ws':
+    '/':
       passthru: true
