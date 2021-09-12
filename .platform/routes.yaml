@@ -4,4 +4,12 @@
 
 "https://{default}/":
   type: redirect
+<<<<<<< Updated upstream
   to: "https://www.{default}/"
+=======
+  to: "https://www.{default}/"
+
+"https://backend.{default}/":
+    type: upstream
+    upstream: "drupal:http"
+>>>>>>> Stashed changes

@@ -1,5 +1,6 @@
 # The name of this app. Must be unique within a project.
-name: app
+# Requires multi project plan
+name: socket
 type: 'nodejs:14'
 build:
   flavor: none
@@ -8,17 +9,14 @@ dependencies:
     yarn: "*"
 hooks:
   build: |
-    set -e
-    mkdir dist
-    yarn
-    yarn build
+    yarn install
 web:
   commands:
-    start: yarn start
+    start: node io.js
   locations:
     '/':
       passthru: true
       request_buffering:
         enabled: false
 relationships:
-  socket: "socket:http"
+  app: "app:http"
