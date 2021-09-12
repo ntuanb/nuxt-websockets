@@ -9,3 +9,5 @@
 "https://backend.{default}/":
   type: upstream
   upstream: "socket:http"
+  cache:
+    enabled: false
