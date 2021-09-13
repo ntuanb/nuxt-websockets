@@ -20,5 +20,3 @@ web:
       passthru: true
       request_buffering:
         enabled: false
-relationships:
-  socket: "socket:http"
